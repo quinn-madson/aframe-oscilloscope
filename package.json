@@ -1,0 +1,13 @@
+{
+  "name": "a-frame oscilloscope",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "http-server"
+  },
+  "author": "Quinn Madson",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
