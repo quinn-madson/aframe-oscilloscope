@@ -24,14 +24,14 @@ function createOscilloscopeComponent() {
     const ctx = canvas.getContext("2d");
 
     document
-      .querySelector("#oscilloscope")
+      .querySelector("#oscilloscope-screen")
       .setAttribute("oscilloscope", { canvas, ctx, analyser });
   }
 }
 
 startPlaybackButton.addEventListener("click", () => {
     if (!audio) {
-      fetch("https://cdn.glitch.global/ce014346-361f-4580-b8ba-5d381014a7a4/268047__sceza__bass-sine-sweep-400-10hz.wav?v=1680470958564")
+      fetch("268047__sceza__bass-sine-sweep-400-10hz.wav")
         .then((response) => response.arrayBuffer())
         .then((data) => audioContext.decodeAudioData(data))
         .then((buffer) => {
